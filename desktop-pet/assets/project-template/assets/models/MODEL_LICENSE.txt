@@ -1,0 +1,9 @@
+Pet segmentation model
+======================
+
+Model: MaskRCNN-12-int8.onnx
+Source: ONNX Model Zoo / onnxmodelzoo/MaskRCNN-12-int8
+Model card: https://huggingface.co/onnxmodelzoo/MaskRCNN-12-int8
+License: Apache License 2.0
+
+The model is used locally to identify and segment the selected cat or dog.
