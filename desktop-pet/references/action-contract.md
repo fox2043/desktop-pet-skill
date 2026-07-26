@@ -9,6 +9,7 @@ Reference-photo count controls identity coverage only. One clear photo is suffic
 - Do not use cross-fade or overlapping sprite frames between actions. Finish the current frame, pause briefly, then switch to the next action's first frame.
 - Every exported PNG must be RGBA. Its outer two-pixel border must have alpha <= 8, so a photo background cannot remain visible around the pet.
 - Remove RGB residue wherever alpha is near zero; do not leave white, gray, or photo-background halos in transparent pixels.
+- Do not leave a black outline around the silhouette. For light fur, replace only near-transparent black matte pixels with the nearest interior fur color; preserve naturally dark fur by sampling its interior color rather than globally brightening it.
 
 ## Autonomous companion behavior
 

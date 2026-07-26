@@ -52,6 +52,7 @@ Keep cat and dog body language different. Cats should prefer sleep, loafing, lyi
 - No action group is composed of five identical frames.
 - `feeding`, `walking-*`, `jumping`, `waving`, and `playing` have clearly different silhouettes from `idle`.
 - Background is transparent; no background rectangle, fading ghost, or cross-fade overlap between actions.
+- No artificial black contour or dark halo is visible around light-colored fur on a light desktop.
 - Run `scripts/validate_pet_frames.py` and provide a contact sheet plus a short preview before packaging.
 
 Read `references/action-contract.md` for detailed pose and timing requirements.
