@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 STATES = (
-    "idle", "sleeping", "waiting", "greeting", "jumping", "cute", "working",
+    "idle", "sleeping", "waiting", "waving", "jumping", "failed", "working",
     "review", "walking-right", "walking-left", "feeding", "playing", "happy",
 )
 

@@ -14,9 +14,9 @@ Create all 13 action groups, each with 5 distinct transparent PNG frames (65 fra
 1. `idle` — sitting or lying quietly; blink, breathe, tiny head turn.
 2. `sleeping` — slow settling, eyes closing, sleeping, brief head lift, resettling.
 3. `waiting` — alert but calm, looking toward the cursor.
-4. `greeting` — approach, look up, soft paw or head greeting.
+4. `waving` — approach, look up, soft paw or head greeting.
 5. `jumping` — a short playful hop with a settle frame.
-6. `cute` — gentle roll, stretch, or affectionate head tilt.
+6. `failed` — gentle lowered head, small stretch, or affectionate head tilt.
 7. `working` — quiet companion pose while the user works.
 8. `review` — attentive listening/looking pose.
 9. `walking-right` — a real alternating rightward gait.
@@ -38,8 +38,8 @@ Keep cat and dog body language different. Cats should prefer sleep, loafing, lyi
 
 ## Interaction mapping
 
-- Mouse hover: `waiting`, `greeting`, `cute`, or `playing`.
-- Right-click greeting: `greeting`.
+- Mouse hover: `waiting`, `waving`, `happy`, or `playing`.
+- Right-click greeting: `waving`.
 - Tease/jump: `jumping` then `happy`.
 - Feed: `feeding` then `happy`.
 - Work/document activity: `working` or `review`.
@@ -50,8 +50,8 @@ Keep cat and dog body language different. Cats should prefer sleep, loafing, lyi
 
 - Exactly 13 action folders and 65 frames, regardless of whether the user uploads 1, 2, 3, or 4 photos.
 - No action group is composed of five identical frames.
-- `feeding`, `walking-*`, `jumping`, `greeting`, and `playing` have clearly different silhouettes from `idle`.
+- `feeding`, `walking-*`, `jumping`, `waving`, and `playing` have clearly different silhouettes from `idle`.
 - Background is transparent; no background rectangle, fading ghost, or cross-fade overlap between actions.
-- Provide a contact sheet and a short preview for visual QA before packaging.
+- Run `scripts/validate_pet_frames.py` and provide a contact sheet plus a short preview before packaging.
 
 Read `references/action-contract.md` for detailed pose and timing requirements.
