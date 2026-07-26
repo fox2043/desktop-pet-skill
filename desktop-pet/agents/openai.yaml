@@ -1,4 +1,4 @@
 interface:
   display_name: "桌面宠物"
-  short_description: "Deliver and verify the fixed offline Windows pet installer."
-  default_prompt: "Use $desktop-pet to deliver the fixed desktop-pet installer."
+  short_description: "Build a multi-action offline desktop pet from 1-4 photos."
+  default_prompt: "Use $desktop-pet to create a multi-action offline desktop pet from my photos."

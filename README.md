@@ -1,23 +1,21 @@
 # Desktop Pet Skill
 
-This is a standalone fixed-release skill for a Windows desktop pet. It delivers and verifies the existing offline installer bundle.
+Create a transparent Windows desktop pet from 1-4 cat or dog photos.
 
-It is not a pet generator: it does not accept photos, offer cat/dog selection, generate another pet, or include main-project source code.
+The reference-photo count never controls the number of actions. One photo and four photos both produce the same required action plan: 13 action groups and 65 animation frames. Extra photos only improve identity consistency, side views, and coat/marking accuracy.
+
+## Action set
+
+Idle, sleeping, waiting, greeting, jumping, cute reaction, working companion, review, left/right walking, feeding, playing, and happy response. Passive behavior is deliberately slow, with at least seven seconds between normal state changes.
 
 ## Use
 
 Install the `desktop-pet` folder as a Codex skill, then ask:
 
 ```text
-Use $desktop-pet to deliver the fixed desktop-pet installer.
+Use $desktop-pet to turn my pet photos into a multi-action offline desktop pet.
 ```
 
-The skill copies the bundled ZIP and verifies its SHA-256 before handoff. See [release.md](desktop-pet/references/release.md) for the release definition.
+The packaged Windows runtime must be offline: reference photos are used during asset creation and the final executable must not upload them or call an API.
 
-## Scope
-
-- Fixed offline Windows release
-- No runtime API calls or photo uploads
-- No pet-generation workflow or source-project dependency
-
-The helper script is released under the [MIT License](LICENSE). Third-party license terms inside the bundled application remain with the application.
+See [action-contract.md](desktop-pet/references/action-contract.md) for action, realism, and timing requirements.
