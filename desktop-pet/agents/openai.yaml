@@ -1,4 +1,4 @@
 interface:
-  display_name: "电脑桌面宠物"
-  short_description: "从1–4张猫狗照片生成完全离线的透明动作Windows桌面宠物"
-  default_prompt: "使用 $desktop-pet 根据我上传的宠物照片制作完全离线的 Windows 桌面宠物。"
+  display_name: "桌面宠物"
+  short_description: "Deliver and verify the fixed offline Windows pet installer."
+  default_prompt: "Use $desktop-pet to deliver the fixed desktop-pet installer."

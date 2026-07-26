@@ -1,9 +1,3 @@
 **/__pycache__/
 *.py[cod]
-.pytest_cache/
-build/
-dist/
-release/
-output/
-deliverables/
-*.log
+release-output/
