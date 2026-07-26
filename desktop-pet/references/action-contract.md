@@ -11,6 +11,10 @@ Reference-photo count controls identity coverage only. One clear photo is suffic
 - Remove RGB residue wherever alpha is near zero; do not leave white, gray, or photo-background halos in transparent pixels.
 - Do not leave a black outline around the silhouette. For light fur, replace only near-transparent black matte pixels with the nearest interior fur color; preserve naturally dark fur by sampling its interior color rather than globally brightening it.
 
+## Display size
+
+Provide exactly three user-selectable size presets in the right-click menu: Small (55%), Medium (72%), and Large (90%). Default to Medium and migrate the old 90% default to Medium once so the pet does not cover too much of a typical desktop.
+
 ## Autonomous companion behavior
 
 The pet must move without waiting for a click. Use a slow, non-repetitive passive loop: mostly `idle` and `sleeping`, with occasional `waiting`, `review`, a short stretch-like `failed`, one brief walk, or a quiet `working` companion pose. Choose a new passive sequence only after the current state has held for its minimum duration. Do not use a rapid random action timer.
